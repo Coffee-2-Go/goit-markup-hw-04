@@ -207,7 +207,7 @@ button {
   border-radius: 2px;
   background: var(--OCEAN);
   position: absolute;
-  bottom: -4px;
+  bottom: -1px;
   left: 0;
 }
 
@@ -233,7 +233,8 @@ button {
 }
 
 .page-header {
-  border-bottom: 1px solid var(--CORNFLOWER);
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .menu-item:not(:last-child) {
@@ -265,6 +266,7 @@ button {
   background-position: center;
   background-size: cover;
   background-clip: padding-box;
+  background-repeat: no-repeat;
 }
 
 .model-btn {
@@ -300,12 +302,7 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 10px;
-}
-
-.about-icon {
-  width: 64px;
-  height: 64px;
+  margin-bottom: 8px;
 }
 
 /* =============== TEAM =============== */
@@ -318,6 +315,8 @@ button {
   width: calc((100% - 3 * 24px) / 4);
   background-color: var(--WHITE);
   border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .description {
@@ -326,12 +325,7 @@ button {
 
 .employee-description {
   padding: 32px 0;
-  border-radius: 0px 0px 4px 4px;
-  background: var(--WHITE);
   text-align: center;
-  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
-    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
-    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
 .social-list {
@@ -341,10 +335,7 @@ button {
 }
 
 .social-list-icon {
-  width: 16px;
-  height: 16px;
   fill: var(--CLOUD);
-  transition: fill var(--transition-specs);
 }
 
 .social-list-link {
@@ -360,12 +351,7 @@ button {
 
 .social-list-link:hover,
 .social-list-link:focus {
-  background-color: var(--CLOUD);
-}
-
-.social-list-link:hover .social-list-icon,
-.social-list-link:focus .social-list-icon {
-  fill: var(--IRIS);
+  background-color: var(--OCEAN);
 }
 
 /* =============== PORTFOLIO =============== */
@@ -413,9 +399,7 @@ button {
   transition: transform var(--transition-specs);
   background-color: var(--IRIS);
   color: var(--CLOUD);
-  padding-left: 32px;
-  padding-right: 32px;
-  padding-top: 40px;
+  padding: 40px 32px;
 }
 
 .portfolio-card:focus .overlay,
@@ -431,7 +415,7 @@ button {
   padding-bottom: 100px;
 }
 
-.footer-link {
+.footer-logo {
   display: inline-block;
   margin-bottom: 16px;
 }
@@ -442,23 +426,28 @@ button {
   width: 264px;
 }
 
-.social {
+.media-text {
+  font-weight: var(--weight-medium);
   color: var(--WHITE);
-  margin-bottom: 17.5px;
+  margin-bottom: 16px;
   display: flex;
   align-items: center;
 }
 
-.social-media {
-  margin-left: 125px;
-}
-
-.big-icon {
-  width: 24px;
-  height: 24px;
+.mission {
+  margin-right: 120px;
 }
 
 .social-list-footer {
   justify-content: center;
   gap: 16px;
+}
+
+.baseline {
+  align-items: baseline;
+}
+
+.footer-link:focus,
+.footer-link:hover {
+  background-color: var(--GREEN)
 }
