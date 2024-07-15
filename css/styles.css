@@ -449,5 +449,5 @@ button {
 
 .footer-link:focus,
 .footer-link:hover {
-  background-color: var(--GREEN)
+  background-color: var(--GREEN);
 }
